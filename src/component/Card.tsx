@@ -10,7 +10,7 @@ const Card = () => {
       </div>
 
       <div className=''>
-        <QuestionLists/>
+        <QuestionLists question='Can I use FrontendPro to prepare for a Frontend Developer interview?' answer='Sure' color='red-300' />
       </div>
     </div>
   )
