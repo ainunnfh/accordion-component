@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 interface IProps {
-  color?: string;
+  color: string;
   question: string;
   answer: string;
 }
@@ -11,15 +11,11 @@ const QuestionLists = (props: IProps) => {
   const [openQuestion, setopenQuestion] = useState(false);
   return (
     <>
-      <div className="">
-        <div
-          className={`p-4 rounded-sm flex flex-row ${
-            props.color ? `bg-${props.color}` : ""
-          }`}
-        >
+      <div className="relative flex flex-col">
+        <div className={`p-4 rounded-sm ${`bg-${props.color}-300`}`}>
           <p>{props.question}</p>
           <button
-            className="ml-4 font-semibold sm:text-xl md:text-2xl"
+            className="absolute right-0 top-0 m-4 font-semibold sm:text-xl md:text-2xl"
             onClick={() => setopenQuestion(!openQuestion)}
           >
             {openQuestion ? "x" : "+"}
