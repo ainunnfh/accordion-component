@@ -12,7 +12,7 @@ const QuestionLists = (props: IProps) => {
   return (
     <>
       <div className="relative flex flex-col">
-        <div className={`p-4 rounded-sm ${`bg-${props.color}-300`}`}>
+        <div className={`p-4 rounded-sm ${`bg-${props.color}`}`}>
           <p>{props.question}</p>
           <button
             className="absolute right-0 top-0 m-4 font-semibold sm:text-xl md:text-2xl"
