@@ -1,9 +1,8 @@
 import Card from "@/component/Card";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex justify-center">
+    <div className="flex items-center justify-center min-h-screen">
       <Card/>
     </div>
   );
