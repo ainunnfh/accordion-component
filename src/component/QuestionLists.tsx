@@ -12,7 +12,7 @@ const QuestionLists = (props: IProps) => {
   return (
     <>
       <div className="relative flex flex-col">
-        <div className={`p-4 rounded-sm ${`bg-${props.color}`}`}>
+        <div className={`p-4 rounded-sm ${`bg-${props.color}-400`}`}>
           <p>{props.question}</p>
           <button
             className="absolute right-0 top-0 m-4 font-semibold sm:text-xl md:text-2xl"
@@ -22,8 +22,10 @@ const QuestionLists = (props: IProps) => {
           </button>
         </div>
 
-        <div className={openQuestion ? "" : "hidden"}>
-          <div className={`bg-${props.color} p-4`}>{props.answer}</div>
+        <div
+          className={`bg-${props.color}-400 ${openQuestion ? "" : "hidden"}`}
+        >
+          <div className="p-4">{props.answer}</div>
         </div>
       </div>
     </>
